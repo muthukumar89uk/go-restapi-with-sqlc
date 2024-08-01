@@ -62,5 +62,4 @@ WHERE userid = $1
 RETURNING *;
 
 -- name: GetallusersEmail :many
-
 SELECT email FROM users WHERE role = 'user';
